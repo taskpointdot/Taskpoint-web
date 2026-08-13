@@ -1,0 +1,51 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Claude Code local settings
+.claude/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Node — an abandoned JS-SDK start left these behind; 160 MB of vendored
+# dependencies has no business in version control.
+node_modules/
+package-lock.json
+
+# Symbolication / obfuscation
+app.*.symbols
+app.*.map.json
+
+# Local environment
+*.env
+
+# Abandoned JS-SDK starter — superseded by the Flutter app
+src/
+package.json

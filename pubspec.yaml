@@ -1,0 +1,40 @@
+name: taskpoint_admin
+description: "TaskPoint internal admin dashboard (Flutter Web)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Same design system as the seeker/provider app — lib/theme/app_theme.dart
+  # is copied directly from taskpoint/lib/theme/app_theme.dart so both apps
+  # look and feel consistent. Keep them in sync if you change one.
+  google_fonts: ^6.2.1
+  material_symbols_icons: ^4.2719.0
+
+  # Shared backend with the mobile app.
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+  # Web platform interop (used for window.open on the image preview dialog).
+  web: ^1.1.0
+
+  # Fetches Firebase Storage photo bytes so they can be drawn with Image.memory
+  # — a native canvas image that renders immediately, instead of an <img>
+  # platform-view overlay that lags Flutter's canvas in a scrolling list.
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
